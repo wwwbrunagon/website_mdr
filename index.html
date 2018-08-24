@@ -8,14 +8,20 @@
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Madre</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
   </head>
 <body>
-    <nav class="topbar">
-        <div class="brand">
-            <a href="#"><img src="" alt="Logo A Madre"></a>
-        </div>
+    <nav>
         <div>
+            <a href="#"><img  class="brand" src="./assets/img/logo.png" alt="Logo A Madre"></a>
+        </div>
+
+        <div>
+            <a href="#"><img class="brand" src="./assets/img/menu.png" alt="menu"></a>
+        </div>
+
+        <div class="menu__toggle">
             <ul>
                 <li><a href="#">HOME</a></li>
                 <li><a href="#">ENTREGAMOS</a></li>
@@ -25,83 +31,52 @@
             </ul>
         </div>
     </nav>
-    <header>
-
+    <header class="header">
     </header>
-    <main> 
-        <section class ="cards">
+
+        <section id="cards">
             <div>
                 <h1>ENTREGAMOS</h1>            
             </div>
-            <div class="cards__products">                
-                <div  class="cards__products--section">
-                    <divclass="cards__products--img">
-                        <img src="" alt="">
-                    </div>
+
+            <!-- card001 -->
+            <div id="cards__products">  
+
+                <div class="cards__section">
                     <div>
-                        <img src="" alt="Imagem com o texto: display">
-                    </div>
-                    <div class="cards__products--description" >
-                        <p> Criação </p><br>
-                        <p> Desktop & Mobile </p><br>
-                        <p> Rich Media </p><br>
-                        <p> Criativo Dinâmicos </p><br>
-                        <p> Produção Automatizada </p><br>
+                        <img class="cards__img" src="./assets/img/card01_display.png" alt="Display: Criação, Desktop & Mobile, Rich Media, Criativo Dinâmicos, Produção Automatizada">
                     </div>
                 </div>
 
-                <div class="cards__products--section">
-                    <divclass="cards__products--img">
-                        <img src="" alt="">
-                    </div>
+                <!-- card002 -->
+                <div class="cards__section">
                     <div>
-                        <img src="" alt="Imagem com o texto: dco">
-                    </div>
-                    <div class="cards__products--description" >  
-                        <p> Planejamento </p><br>
-                        <p> Setup Técnico </p><br>
-                        <p> Criação </p><br>
-                        <p> Desenvolvimento </p><br>
+                        <img class="cards__img" src="./assets/img/card02_dco.png" alt=" DCO: Planejamento, Setup Técnico, Criação, Desenvolvimento">
                     </div>
                 </div>
 
-                <div  class="cards__products--section">
-                    <divclass="cards__products--img">
-                        <img src="" alt="">
-                    </div>
+                <!-- card003 -->
+                <div class="cards__section">
                     <div>
-                        <img src="" alt="Imagem com o texto: social ads">
-                    </div>
-                    <div class="cards__products--description" >
-                        <p> Criação</p> <br>
-                        <p> Videis e Gifs animados </p><br>
-                        <p> Posts estáticos </p><br>
+                        <img class="cards__img" src="./assets/img/card03_socialads.png" alt=" Criação, Videos e Gifs animados, Posts estáticos">
                     </div>
                 </div>
-
-                <div  class="cards__products--section">
-                    <divclass="cards__products--img">
-                        <img src="" alt="">
-                    </div>
+                
+                <!-- card004 -->
+                <div class="cards__section">
                     <div>
-                        <img src="" alt="Imagem com o texto: ooh">
+                        <img class="cards__img" src="./assets/img/card04_ooh.png" alt="OOH: Animação,Peças Interativas, Conteúdo Dinâmico">
                     </div>
-                    <div class="cards__products--description" >
-                        <p> Animação </p> <br>
-                        <p> Peças Interativas </p><br>
-                        <p> Conteúdo Dinâmico </p><br>
-                    </div>
-                </div>
-            </div>            
+             </div>                 
         </section>
 
-        <section class="carousel">            
+        <section id="carousel">            
             <div class="carousel__celprlx">
                 <img src="" alt="celular">
             </div>
             
             <div class="carousel__content">
-                <h2>JOBS</h2>
+                <h1>JOBS</h1>
             </div>
             <div>
                 <p><span>Campanha:</span>Tiguan Allspace</p><br>
@@ -110,21 +85,51 @@
             </div>
         </section>
         
-        <section class="thumbs">
+        <section id="thumbs">
 
+            <div class= "thumbs"> 
+                <div class="thumbs__box">
+                    <a href="#"> 
+                        <img src="">
+                    </a>
+                </div>
+                
+                <div class="thumbs__box">
+                    <a href="#"> 
+                        <img src="">
+                    </a>
+                </div>
+
+                <div class="thumbs__box">
+                    <a href="#"> 
+                        <img src="">
+                    </a>
+                </div>
+
+                <div class="thumbs__box">
+                    <a href="#"> 
+                        <img src="">
+                    </a>
+                </div>
+                
+                <div class="thumbs__box">
+                    <a href="#"> 
+                        <img src="">
+                    </a>
+                </div>
+            </div>
         </section>
         
         
-        <section class="clients">
+        <section id="clients">
+            <div class="div">
+                <h1> CLIENTES</h1>
+            </div>
+            
         </section>        
-    </main>
+
     <footer>        
     </footer>
     
 </body>
 </html>                                                             
-<!-- 
-
-.formcontent (elemento pai)
-.formcontent__field (elemento filho)
-.formcontent__field--first (elemento filho modificad -->
