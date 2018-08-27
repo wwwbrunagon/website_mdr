@@ -36,7 +36,8 @@ nav .brand {
   background-size: cover;
   -o-object-fit: cover;
      object-fit: cover;
-  min-height: 50rem;
+  width: 100vw;
+  min-height: 60rem;
   background-repeat: no-repeat;
   background-position: 45%;
 }
@@ -44,10 +45,13 @@ nav .brand {
 #cards {
   background-color: #1db2d7;
   min-height: 40rem;
+  width: 100vw;
 }
 
 #cards h1 {
-  padding: 45px 40px;
+  padding: 60px 80px;
+  color: #ffffff;
+  font-size: 60px;
 }
 
 #cards #cards__products {
@@ -68,25 +72,96 @@ nav .brand {
 }
 
 #carousel {
+  width: 100vw;
+  background-size: cover;
   min-height: 20rem;
   background-color: #7b7b7b;
+  min-height: 40rem;
+}
+
+#carousel h1 {
+  padding: 60px 80px;
+  color: #ffffff;
+  font-size: 60px;
+  margin-bottom: 180px;
+}
+
+#carousel p {
+  padding: 0px 80px;
 }
 
 .thumbs__box {
-  max-width: 100rem;
+  width: 100vw;
   min-height: 10rem;
   background-color: #57c3c5;
 }
 
 #clients {
-  max-width: 100rem;
-  min-height: 30rem;
+  width: 100vw;
+  min-height: 65rem;
   background-color: #ffffff;
 }
 
+#clients h1 {
+  padding: 60px 80px;
+  font-size: 60px;
+}
+
+#clients .clients__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 80px;
+}
+
+#clients .clients__brand img {
+  width: 300px;
+  padding: 10px 80px;
+}
+
 footer {
-  max-width: 100rem;
-  min-height: 30rem;
   background-color: #131313;
+  background: url(../img/footer/footerbg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  min-height: 60rem;
+}
+
+footer h1 {
+  padding: 222px 80px;
+  color: #ffffff;
+  font-size: 60px;
+}
+
+footer #footer__contact {
+  padding: 100px 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  max-width: 400px;
+}
+
+footer #footer__contact a {
+  margin-right: 7rem;
+}
+
+footer #footer__contact P {
+  color: #ffffff;
+}
+
+footer #footer__contact .footer__p {
+  color: #25fcff;
 }
 /*# sourceMappingURL=style.css.map */

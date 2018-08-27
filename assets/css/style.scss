@@ -13,7 +13,7 @@ nav {
     position: fixed;
     width: 100%;
     top:0;
-
+    
     .brand{
         margin: 30px 30px;
         align-items: center;
@@ -29,52 +29,115 @@ nav {
     background: url(../img/bgheader.jpg);
     background-size: cover;
     object-fit: cover;
-    min-height: 50rem;
+    width: 100vw;
+    min-height: 60rem;
     background-repeat: no-repeat;
-    background-position: 45%;
-    
+    background-position: 45%;    
 }
 
 #cards{
     background-color: #1db2d7;
     min-height: 40rem;
+    width: 100vw;
     h1{
-        padding: 45px 40px;
+        padding:60px 80px;
+        color: #ffffff;
+        font-size: 60px;
     }
     #cards__products{
         display: flex;
         align-items: center;
         justify-content: center;              
     }
-
+    
     .cards__img{
         max-width: 15rem;
         padding-top:20px;
     }
-  
+    
 }
 
 #carousel{
+    width: 100vw;
+    background-size: cover;
     min-height: 20rem;
     background-color: #7b7b7b;
+    min-height: 40rem;
+    h1{
+        padding:60px 80px;
+        color: #ffffff;
+        font-size: 60px;
+        margin-bottom: 180px;
+    }
+    p{
+        padding: 0px 80px;
+        
+    }
 }
 
 
 .thumbs__box{
-    max-width: 100rem;
+    width: 100vw;
     min-height: 10rem;
     background-color: #57c3c5;
 } 
 
 
 #clients{
-    max-width: 100rem;
-    min-height: 30rem;
+    width: 100vw;
+    min-height: 65rem;
     background-color: #ffffff;
+    h1{
+        padding:60px 80px;
+        font-size: 60px;
+    }
+    .clients__box{
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        padding: 10px 80px;  
+    }
+    .clients__brand{
+        img{
+            width: 300px;
+            padding: 10px 80px; 
+        }
+    }
 }  
 
 footer{
-    max-width: 100rem;
-    min-height: 30rem;
     background-color: #131313;
+    background: url(../img/footer/footerbg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    min-height: 60rem;
+    
+    h1{
+        padding: 222px 80px;
+        color: #ffffff;
+        font-size: 60px;
+    }
+    #footer__contact{
+        
+        padding: 100px 80px; 
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        max-width: 400px;  
+        a{
+            margin-right: 7rem;
+        }
+           
+        P{
+            color: #ffffff;
+        }
+        
+        .footer__p{
+         color: #25fcff;
+        
+        }
+        
+    }
+    
 }
