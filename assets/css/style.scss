@@ -1,6 +1,7 @@
 * {
     margin: 0;   
-    font-family: 'Montserrat', sans-serif;    
+    font-family: 'Montserrat', sans-serif;  
+    box-sizing: border-box;  
 }
 h1{
     font-size: 45px;
@@ -21,21 +22,77 @@ nav {
 }
 
 
-.menu__toggle{
-    display:none;
+//Menu Toggle
+.menu__toggle {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
 }
+
+.menu__toggle a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 50px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.menu__toggle a:hover {
+    color: #f1f1f1;
+}
+
+.menu__toggle .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+// @media screen and (max-height: 450px) {
+//   .menu__toggle {padding-top: 15px;}
+//   .menu__toggle a {font-size: 18px;}
+// }
+
+//end Menu Toggle
+
 
 .header{
     background: url(../img/bgheader.jpg);
     background-size: cover;
     object-fit: cover;
     width: 100vw;
-    min-height: 60rem;
+    min-height: 50rem;
     background-repeat: no-repeat;
-    background-position: 45%;    
+    background-position: 45%; 
+
+    P{
+        width: 500px;
+        color: #16a2c5;
+        padding: 300px 0px 10px 80px;
+        text-transform: uppercase; 
+        line-height: 1.6;
+    }  
+    h1{
+        padding: 0px 80px;
+        color: #ffffff;
+        font-size: 60px;
+    }
+    
 }
 
-#cards{
+
+//ENTREGAMOS
+
+#wedeliver{
     background-color: #1db2d7;
     min-height: 40rem;
     width: 100vw;
@@ -44,48 +101,102 @@ nav {
         color: #ffffff;
         font-size: 60px;
     }
-    #cards__products{
+    #wedeliver__products{
         display: flex;
         align-items: center;
         justify-content: center;              
     }
     
-    .cards__img{
-        max-width: 15rem;
-        padding-top:20px;
-    }
-    
+    .wedeliver__img{
+        max-width: 100%;
+        padding: 20px 10px 30px 10px;
+    }        
 }
 
-#carousel{
+//END ENTREGAMOS
+
+
+
+
+#jobs{
     width: 100vw;
+    min-height: 3rem;
     background-size: cover;
-    min-height: 20rem;
     background-color: #7b7b7b;
-    min-height: 40rem;
+    
+    
     h1{
         padding:60px 80px;
         color: #ffffff;
         font-size: 60px;
-        margin-bottom: 180px;
+        margin-bottom: 40px;
     }
-    p{
-        padding: 0px 80px;
+    .jobs__carousel{
+        display: flex;
+        align-items: center;
+        justify-content: space-between; 
+        width: 500px; 
+    }
+    .jobs__bullets{
+        display: flex;
+        margin-top: 60px;
+        a{
+            padding: 0px 8px;
+            margin-left: 5px;
+        }
+       
+    }
+    .jobs__p{
+        color:#ffffff;
+        width: 350px;
+        
+        p{
+            padding: 5px 80px;
+            font-size: 13px;
+           
+        }
+        .jobs__p--adjust{
+            color:#131313;
+            font-size: 12px;
+        }
+        
         
     }
+    .jobs__celprlx{
+        img{
+            width: 900px;
+            margin-top: -400px;
+            margin-left: 250px;
+           
+        } 
+        .cel__base{
+            position: absolute;
+            z-index: 1;           
+        }
+        .cel__conteudo{
+            position: absolute;
+            width: 900px;
+            z-index: 1;            
+        }   
+    }  
 }
 
 
-.thumbs__box{
+#thumbs{
+    display: flex;
+    align-items: start;
+    justify-content: center;
     width: 100vw;
-    min-height: 10rem;
-    background-color: #57c3c5;
+    img{
+        width: 216px;
+        margin-bottom: -4px;
+    }
 } 
 
 
 #clients{
     width: 100vw;
-    min-height: 65rem;
+    min-height: 45rem;
     background-color: #ffffff;
     h1{
         padding:60px 80px;
@@ -99,8 +210,8 @@ nav {
     }
     .clients__brand{
         img{
-            width: 300px;
-            padding: 10px 80px; 
+            width: 100%;
+            padding: 20px 30px; 
         }
     }
 }  
@@ -128,14 +239,14 @@ footer{
         a{
             margin-right: 7rem;
         }
-           
+        
         P{
             color: #ffffff;
         }
         
         .footer__p{
-         color: #25fcff;
-        
+            color: #25fcff;
+            
         }
         
     }

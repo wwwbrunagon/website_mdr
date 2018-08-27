@@ -14,239 +14,455 @@
 <body>
     <nav>
         <div>
-            <a href="#"><img  class="brand" src="./assets/img/logo.png" alt="Logo A Madre"></a>
-        </div>
-        
+            <a href="#"><img class="brand" src="./assets/img/logo.png" alt="Logo A Madre"></a>
+        </div>        
         <div>
-            <a href="#"><img class="brand" src="./assets/img/menu.png" alt="menu"></a>
-        </div>
-        
-        <div class="menu__toggle">
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ENTREGAMOS</a></li>
-                <li><a href="#">JOBS</a></li>
-                <li><a href="#">CLIENTES</a></li>
-                <li><a href="#">CONTATO</a></li>
-            </ul>
+            <a href="#"><img class="brand" src="./assets/img/menu.png" alt="menu" onclick="openNav()"></a>
+        </div>        
+        <div id="menu" class="menu__toggle">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">HOME</a>
+            <a href="#">ENTREGAMOS</a>
+            <a href="#">JOBS</a>
+            <a href="#">CLIENTES</a>
+            <a href="#">CONTATO</a>
         </div>
     </nav>
     <header class="header">
+        <P> Somos A Madre, uma produtora de mídia display com  foco em logística para criatividade e comunicação. </P>
+        <div>
+            <h1>BEM VINDOS</h1>            
+        </div>
     </header>
     
-    <section id="cards">
+    <section id="wedeliver">
         <div>
             <h1>ENTREGAMOS</h1>            
         </div>
         
         <!-- card001 -->
-        <div id="cards__products">  
+        <div id="wedeliver__products">  
             
-            <div class="cards__section">
+            <div class="wedeliver__card">
                 <div>
-                    <img class="cards__img" src="./assets/img/card01_display.png" alt="Display: Criação, Desktop & Mobile, Rich Media, Criativo Dinâmicos, Produção Automatizada">
+                    <img class="wedeliver__img" src="./assets/img/card01_display.png" alt="Display: Criação, Desktop & Mobile, Rich Media, Criativo Dinâmicos, Produção Automatizada">
                 </div>
             </div>
             
             <!-- card002 -->
-            <div class="cards__section">
+            <div class="wedeliver__card">
                 <div>
-                    <img class="cards__img" src="./assets/img/card02_dco.png" alt=" DCO: Planejamento, Setup Técnico, Criação, Desenvolvimento">
+                    <img class="wedeliver__img" src="./assets/img/card02_dco.png" alt=" DCO: Planejamento, Setup Técnico, Criação, Desenvolvimento">
                 </div>
             </div>
             
             <!-- card003 -->
-            <div class="cards__section">
+            <div class="wedeliver__card">
                 <div>
-                    <img class="cards__img" src="./assets/img/card03_socialads.png" alt=" Criação, Videos e Gifs animados, Posts estáticos">
+                    <img class="wedeliver__img" src="./assets/img/card03_socialads.png" alt=" Criação, Videos e Gifs animados, Posts estáticos">
                 </div>
             </div>
             
             <!-- card004 -->
-            <div class="cards__section">
+            <div class="wedeliver__card">
                 <div>
-                    <img class="cards__img" src="./assets/img/card04_ooh.png" alt="OOH: Animação,Peças Interativas, Conteúdo Dinâmico">
+                    <img class="wedeliver__img" src="./assets/img/card04_ooh.png" alt="OOH: Animação,Peças Interativas, Conteúdo Dinâmico">
                 </div>
             </div>                 
         </section>
         
-        <section id="carousel">            
-            <div class="carousel__celprlx">
-                <img src="" alt="celular">
-            </div>
+        <section id="jobs">            
             
-            <div class="carousel__content">
+            <div>
                 <h1>JOBS</h1>
             </div>
-            <div id="carousel__p">
-                <p><span>Campanha:</span>Tiguan Allspace</p><br>
-                <p><span>Cliente:</span>Volkswagen</p><br>
-                <p><span>Agência:</span>AlmapBBDO</p><br>
+            
+            <div class="jobs__carousel">
+                
+                <div class="jobs__p">
+                    <p><span class="jobs__p--adjust">Campanha: </span>Tiguan Allspace</p>
+                    <p><span class="jobs__p--adjust">Cliente: </span>Volkswagen</p>
+                    <p><span class="jobs__p--adjust">Agência: </span>AlmapBBDO</p>
+                </div>
+                <div class="jobs__bullets"> 
+                    <div>
+                        <a href="#"> 
+                            <img src="./assets/img/bullet.png" alt="Bullet carousel">
+                        </a>
+                    </div>                   
+                    <div>
+                        <a href="#"> 
+                            <img src="./assets/img/bullet.png" alt="Bullet carousel">
+                        </a>
+                    </div>                   
+                    
+                    <div>
+                        <a href="#"> 
+                            <img src="./assets/img/bullet.png" alt="Bullet carousel">
+                        </a>
+                    </div>                   
+                    
+                    <div>
+                        <a href="#"> 
+                            <img src="./assets/img/bullet.png" alt="Bullet carousel">
+                        </a>
+                    </div>                   
+                    
+                    <div>
+                        <a href="#"> 
+                            <img src="./assets/img/bullet.png" alt="Bullet carousel">
+                        </a>
+                    </div>                   
+                    
+                </div>
             </div>
+            
+            <div class="jobs__celprlx">
+                <img class="cel__conteudo" src="./assets/img/celular__conteudoteste.png" alt="celular">
+                <img clas="cel__base" src="./assets/img/celular.png" alt="celular">
+            </div>
+            
+            
+            
+            
         </section>
         
         <section id="thumbs">
             
-            <div class= "thumbs"> 
+            <div class= "thumbs__row01"> 
+                
                 <div class="thumbs__box">
                     <a href="#"> 
-                        <img src="">
+                        <img src="./assets/img/jobeven.jpg">
+                    </a>
+                </div>
+                <div class="thumbs__box">
+                    <a href="#"> 
+                        <img src="./assets/img/jobodd.jpg">
                     </a>
                 </div>
                 
                 <div class="thumbs__box">
                     <a href="#"> 
-                        <img src="">
+                        <img src="./assets/img/jobeven.jpg">
+                    </a>
+                </div>
+                <div class="thumbs__box">
+                    <a href="#"> 
+                        <img src="./assets/img/jobodd.jpg">
                     </a>
                 </div>
                 
                 <div class="thumbs__box">
                     <a href="#"> 
-                        <img src="">
+                        <img src="./assets/img/jobeven.jpg">
                     </a>
                 </div>
-                
                 <div class="thumbs__box">
                     <a href="#"> 
-                        <img src="">
+                        <img src="./assets/img/jobodd.jpg">
                     </a>
-                </div>
-                
-                <div class="thumbs__box">
-                    <a href="#"> 
-                        <img src="">
-                    </a>
-                </div>
-            </div>
-        </section>
-        
-        
-        <section id="clients">
-            <div class="div">
-                <h1> CLIENTES</h1>
-            </div>
-            
-            <div class="clients__box">
-                
-                <div class="clients__box01">
-                    
-                    <div class="clients__brand">
-                        <a href="#"> 
-                            <img src="./assets//img/clientes/leobnt.jpg" alt="Logo Cliente LEO BRUNET">
-                        </a>
-                    </div>
-                    <div class="clients__brand">
-                        <a href="#"> 
-                            <img src="./assets//img/clientes/google.jpg" alt="Logo Cliente GOOGLE">
-                        </a>
-                    </div>
-                    <div class="clients__brand">
-                        <a href="#"> 
-                            <img src="./assets//img/clientes/wunderman.jpg" alt="Logo Cliente WUNDERMAN">
-                        </a>
-                    </div>
-                    <div class="clients__brand">
-                        <a href="#"> 
-                            <img src="./assets//img/clientes/cpb.jpg" alt="Logo Cliente CP+B">
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="clients__box02">
-                    
-                    <div class="clients__brand">
-                        <a href="#"> 
-                            <img src="./assets//img/clientes/almapbbdo.jpg" alt="Logo Cliente ALMA BBDO">
-                        </a>
-                    </div>
-                    <div class="clients__brand">
-                        <a href="#"> 
-                            <img src="./assets//img/clientes/salvetribal.jpg" alt="Logo Cliente SALVE TRIBAL">
-                        </a>
-                    </div>
-                    <div class="clients__brand">
-                        <a href="#"> 
-                            <img src="./assets//img/clientes/talentmarcel.jpg" alt="Logo Cliente TALENT MARCEL">
-                        </a>
-                    </div>
-                    <div class="clients__brand">
-                        <a href="#"> 
-                            <img src="./assets//img/clientes/youse.jpg" alt="Logo Cliente YOUSE">
-                        </a>
-                    </div>
-                </div>
-                <div class="clients__box03">
-                    
-                    <div class="clients__brand">
-                        <a href="#"> 
-                            <img src="./assets//img/clientes/akqa.jpg" alt="Logo Cliente AKGA">
-                        </a>
-                    </div>
-                    <div class="clients__brand">
-                        <a href="#"> 
-                            <img src="./assets//img/clientes/logocliente.jpg" alt="Logo Cliente ???">
-                        </a>
-                    </div>
-                    <div class="clients__brand">
-                        <a href="#"> 
-                            <img src="./assets//img/clientes/moma.jpg" alt="Logo Cliente MOMA">
-                        </a>
-                    </div>
-                    <div class="clients__brand">
-                        <a href="#"> 
-                            <img src="./assets//img/clientes/theheart.jpg" alt="Logo Cliente THE HEART">
-                        </a>
-                    </div>
-                </div>
-                <div class="clients__box04">
-                    
-                    <div class="clients__brand">
-                        <a href="#"> 
-                            <img src="./assets//img/clientes/dm9ddb.jpg" alt="Logo Cliente DM9DDB">
-                        </a>
-                    </div>
-                    <div class="clients__brand">
-                        <a href="#"> 
-                            <img src="./assets//img/clientes/reamp.jpg" alt="Logo Cliente REAMP">
-                        </a>
-                    </div>
-                    <div class="clients__brand">
-                        <a href="#"> 
-                            <img src="./assets//img/clientes/onedigita.jpg" alt="Logo Cliente One Digital">
-                        </a>
-                    </div>
-                    <div class="clients__brand">
-                        <a href="#"> 
-                            <img src="./assets//img/clientes/dpzt.jpg" alt="Logo Cliente DPZT">
-                        </a>
-                    </div>
-                </div>
-                
-            </div>
-            
-        </section>        
-        
-        <footer>
-            <div>
-                <h1>VAMOS <br>CONVERSAR</h1>            
-            </div> 
-            <div id="footer__contact">
-                <div>
-                    <a href="#"> 
-                        <img src="./assets//img/footer/madresita.png" alt="ilustração da Madre">
-                    </a>                    
-                </div>
-                <div>
-                    <p>+55 11 3081-4328</p>
-                    <p>falecom@amad.re</p>
-                    <img src="./assets//img/footer/bandeira.1pg" alt="bandeira brasil">
-                    <p class="footer__p">Rua Cristiano Vianam 401 cj 803 - Pinheiros São Paulo - SP</p>
-                    <p class="footer__p">05044-040 - Brasil</p>
                 </div>
             </div>
             
-        </footer>
-        
-    </body>
-    </html>                                                             
+            
+            
+            <div class= "thumbs__row02"> 
+                
+                <div class="thumbs__box">
+                    <a href="#"> 
+                        <img src="./assets/img/jobodd.jpg">
+                    </a>
+                </div>
+                
+                <div class="thumbs__box">
+                    <a href="#"> 
+                        <img src="./assets/img/jobeven.jpg">
+                    </a>
+                </div>
+                <div class="thumbs__box">
+                    <a href="#"> 
+                        <img src="./assets/img/jobodd.jpg">
+                    </a>
+                </div>
+                
+                <div class="thumbs__box">
+                    <a href="#"> 
+                        <img src="./assets/img/jobeven.jpg">
+                    </a>
+                </div>
+                <div class="thumbs__box">
+                    <a href="#"> 
+                        <img src="./assets/img/jobodd.jpg">
+                    </a>
+                </div>
+                
+                <div class="thumbs__box">
+                    <a href="#"> 
+                        <img src="./assets/img/jobeven.jpg">
+                    </a>
+                </div>               
+            </div>
+            
+            <div class= "thumbs__row03"> 
+                
+                <div class="thumbs__box">
+                    <a href="#"> 
+                        <img src="./assets/img/jobeven.jpg">
+                    </a>
+                </div>
+                <div class="thumbs__box">
+                    <a href="#"> 
+                        <img src="./assets/img/jobodd.jpg">
+                    </a>
+                </div>
+                
+                <div class="thumbs__box">
+                    <a href="#"> 
+                        <img src="./assets/img/jobeven.jpg">
+                    </a>
+                </div>
+                <div class="thumbs__box">
+                    <a href="#"> 
+                        <img src="./assets/img/jobodd.jpg">
+                    </a>
+                </div>
+                
+                <div class="thumbs__box">
+                    <a href="#"> 
+                        <img src="./assets/img/jobeven.jpg">
+                    </a>
+                </div>
+                <div class="thumbs__box">
+                    <a href="#"> 
+                        <img src="./assets/img/jobodd.jpg">
+                    </a>
+                </div>
+            </div>
+            
+            <div class= "thumbs__row04"> 
+                
+                <div class="thumbs__box">
+                    <a href="#"> 
+                        <img src="./assets/img/jobodd.jpg">
+                    </a>
+                </div>
+                
+                <div class="thumbs__box">
+                    <a href="#"> 
+                        <img src="./assets/img/jobeven.jpg">
+                    </a>
+                </div>
+                <div class="thumbs__box">
+                    <a href="#"> 
+                        <img src="./assets/img/jobodd.jpg">
+                    </a>
+                </div>
+                
+                <div class="thumbs__box">
+                    <a href="#"> 
+                        <img src="./assets/img/jobeven.jpg">
+                    </a>
+                </div>
+                <div class="thumbs__box">
+                    <a href="#"> 
+                        <img src="./assets/img/jobodd.jpg">
+                    </a>
+                </div>
+                
+                <div class="thumbs__box">
+                    <a href="#"> 
+                        <img src="./assets/img/jobeven.jpg">
+                    </a>
+                </div>               
+            </div>
+            
+            
+            <div class= "thumbs__row05"> 
+                
+                <div class="thumbs__box">
+                    <a href="#"> 
+                        <img src="./assets/img/jobeven.jpg">
+                    </a>
+                </div>
+                <div class="thumbs__box">
+                    <a href="#"> 
+                        <img src="./assets/img/jobodd.jpg">
+                    </a>
+                </div>
+                
+                <div class="thumbs__box">
+                    <a href="#"> 
+                        <img src="./assets/img/jobeven.jpg">
+                    </a>
+                </div>
+                <div class="thumbs__box">
+                    <a href="#"> 
+                        <img src="./assets/img/jobodd.jpg">
+                    </a>
+                </div>
+                
+                <div class="thumbs__box">
+                    <a href="#"> 
+                        <img src="./assets/img/jobeven.jpg">
+                    </a>
+                </div>
+                <div class="thumbs__box">
+                    <a href="#"> 
+                        <img src="./assets/img/jobodd.jpg">
+                    </a>
+                </div>
+            </div>
+            
+            
+            
+            
+        </div>
+    </section>
     
+    
+    <section id="clients">
+        <div class="div">
+            <h1> CLIENTES</h1>
+        </div>
+        
+        <div class="clients__box">
+            
+            <div class="clients__box01">
+                
+                <div class="clients__brand">
+                    <a href="#"> 
+                        <img src="./assets//img/clientes/leobnt.png" alt="Logo Cliente LEO BRUNET">
+                    </a>
+                </div>
+                <div class="clients__brand">
+                    <a href="#"> 
+                        <img src="./assets//img/clientes/google.png" alt="Logo Cliente GOOGLE">
+                    </a>
+                </div>
+                <div class="clients__brand">
+                    <a href="#"> 
+                        <img src="./assets//img/clientes/wunderman.png" alt="Logo Cliente WUNDERMAN">
+                    </a>
+                </div>
+                <div class="clients__brand">
+                    <a href="#"> 
+                        <img src="./assets//img/clientes/cpb.png" alt="Logo Cliente CP+B">
+                    </a>
+                </div>
+            </div>
+            
+            <div class="clients__box02">
+                
+                <div class="clients__brand">
+                    <a href="#"> 
+                        <img src="./assets//img/clientes/almapbbdo.png" alt="Logo Cliente ALMA BBDO">
+                    </a>
+                </div>
+                <div class="clients__brand">
+                    <a href="#"> 
+                        <img src="./assets//img/clientes/salvetribal.png" alt="Logo Cliente SALVE TRIBAL">
+                    </a>
+                </div>
+                <div class="clients__brand">
+                    <a href="#"> 
+                        <img src="./assets//img/clientes/talentmarcel.png" alt="Logo Cliente TALENT MARCEL">
+                    </a>
+                </div>
+                <div class="clients__brand">
+                    <a href="#"> 
+                        <img src="./assets//img/clientes/youse.png" alt="Logo Cliente YOUSE">
+                    </a>
+                </div>
+            </div>
+            <div class="clients__box03">
+                
+                <div class="clients__brand">
+                    <a href="#"> 
+                        <img src="./assets//img/clientes/akqa.png" alt="Logo Cliente AKGA">
+                    </a>
+                </div>
+                <div class="clients__brand">
+                    <a href="#"> 
+                        <img src="./assets//img/clientes/logocliente.png" alt="Logo Cliente ???">
+                    </a>
+                </div>
+                <div class="clients__brand">
+                    <a href="#"> 
+                        <img src="./assets//img/clientes/moma.png" alt="Logo Cliente MOMA">
+                    </a>
+                </div>
+                <div class="clients__brand">
+                    <a href="#"> 
+                        <img src="./assets//img/clientes/theheart.png" alt="Logo Cliente THE HEART">
+                    </a>
+                </div>
+            </div>
+            <div class="clients__box04">
+                
+                <div class="clients__brand">
+                    <a href="#"> 
+                        <img src="./assets//img/clientes/dm9ddb.png" alt="Logo Cliente DM9DDB">
+                    </a>
+                </div>
+                <div class="clients__brand">
+                    <a href="#"> 
+                        <img src="./assets//img/clientes/reamp.png" alt="Logo Cliente REAMP">
+                    </a>
+                </div>
+                <div class="clients__brand">
+                    <a href="#"> 
+                        <img src="./assets//img/clientes/onedigital.png" alt="Logo Cliente One Digital">
+                    </a>
+                </div>
+                <div class="clients__brand">
+                    <a href="#"> 
+                        <img src="./assets//img/clientes/dpzt.png" alt="Logo Cliente DPZT">
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+        
+    </section>        
+    
+    <footer>
+        <div>
+            <h1>VAMOS <br>CONVERSAR</h1>            
+        </div> 
+        <div id="footer__contact">
+            <div>
+                <a href="#"> 
+                    <img src="./assets//img/footer/madresita.png" alt="ilustração da Madre">
+                </a>                    
+            </div>
+            <div>
+                <p>+55 11 3081-4328</p>
+                <p>falecom@amad.re</p>
+                <img src="./assets//img/footer/bandeira.1pg" alt="bandeira brasil">
+                <p class="footer__p">Rua Cristiano Vianam 401 cj 803 - Pinheiros São Paulo - SP</p>
+                <p class="footer__p">05044-040 - Brasil</p>
+            </div>
+        </div>
+        
+        <div id="footer__gal--col01">
+            <div>
+                <!-- <img class="wedeliver_img" src="./assets/img/footer/footer_img01.jpg" alt="Fotografia do escritorio da Madre" > -->
+            </div>
+            
+        </div>       
+        
+    </footer>
+    
+    <script>
+        function openNav() {
+            document.getElementById("menu").style.width = "400px";
+        }
+        
+        function closeNav() {
+            document.getElementById("menu").style.width = "0";
+        }
+    </script>
+    
+</body>
+</html>                                                             
