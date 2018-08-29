@@ -1,10 +1,10 @@
 * {
     margin: 0;   
     font-family: 'Montserrat', sans-serif;  
-    box-sizing: border-box;  
+    box-sizing: border-box; 
 }
 h1{
-    font-size: 45px;
+    font-size: 50px;
     font-weight: 900;
 }
 
@@ -23,11 +23,11 @@ nav {
 
 
 //Menu Toggle
-.menu__toggle {
+.menu--toggle {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 3;
     top: 0;
     right: 0;
     background-color: #111;
@@ -36,20 +36,21 @@ nav {
     padding-top: 60px;
 }
 
-.menu__toggle a {
+.menu--toggle a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 50px;
+    font-size: 35px;
+    font-weight: bold;
     color: #818181;
     display: block;
     transition: 0.3s;
 }
 
-.menu__toggle a:hover {
+.menu--toggle a:hover {
     color: #f1f1f1;
 }
 
-.menu__toggle .closebtn {
+.menu--toggle .closebtn {
     position: absolute;
     top: 0;
     right: 25px;
@@ -58,197 +59,265 @@ nav {
 }
 
 // @media screen and (max-height: 450px) {
-//   .menu__toggle {padding-top: 15px;}
-//   .menu__toggle a {font-size: 18px;}
-// }
-
-//end Menu Toggle
-
-
-.header{
-    background: url(../img/bgheader.jpg);
-    background-size: cover;
-    object-fit: cover;
-    width: 100vw;
-    min-height: 50rem;
-    background-repeat: no-repeat;
-    background-position: 45%; 
-
-    P{
-        width: 500px;
-        color: #16a2c5;
-        padding: 300px 0px 10px 80px;
-        text-transform: uppercase; 
-        line-height: 1.6;
-    }  
-    h1{
-        padding: 0px 80px;
-        color: #ffffff;
-        font-size: 60px;
-    }
+    //   .menu--toggle {padding-top: 15px;}
+    //   .menu--toggle a {font-size: 18px;}
+    // }
     
-}
-
-
-//ENTREGAMOS
-
-#wedeliver{
-    background-color: #1db2d7;
-    min-height: 40rem;
-    width: 100vw;
-    h1{
-        padding:60px 80px;
-        color: #ffffff;
-        font-size: 60px;
-    }
-    #wedeliver__products{
-        display: flex;
-        align-items: center;
-        justify-content: center;              
-    }
-    
-    .wedeliver__img{
-        max-width: 100%;
-        padding: 20px 10px 30px 10px;
-    }        
-}
-
-//END ENTREGAMOS
-
-
-
-
-#jobs{
-    width: 100vw;
-    min-height: 3rem;
-    background-size: cover;
-    background-color: #7b7b7b;
+    //end Menu Toggle
     
     
-    h1{
-        padding:60px 80px;
-        color: #ffffff;
-        font-size: 60px;
-        margin-bottom: 40px;
-    }
-    .jobs__carousel{
-        display: flex;
-        align-items: center;
-        justify-content: space-between; 
-        width: 500px; 
-    }
-    .jobs__bullets{
-        display: flex;
-        margin-top: 60px;
-        a{
-            padding: 0px 8px;
-            margin-left: 5px;
-        }
-       
-    }
-    .jobs__p{
-        color:#ffffff;
-        width: 350px;
+    .header{
+        background: url(../img/bgheader.jpg);
+        background-size: cover;
+        object-fit: cover;
+        width: 100vw;
+        min-height: 50rem;
+        background-repeat: no-repeat;
+        background-position: 45%;
         
-        p{
-            padding: 5px 80px;
-            font-size: 13px;
-           
-        }
-        .jobs__p--adjust{
-            color:#131313;
-            font-size: 12px;
-        }
-        
-        
-    }
-    .jobs__celprlx{
-        img{
-            width: 900px;
-            margin-top: -400px;
-            margin-left: 250px;
-           
-        } 
-        .cel__base{
-            position: absolute;
-            z-index: 1;           
-        }
-        .cel__conteudo{
-            position: absolute;
-            width: 900px;
-            z-index: 1;            
-        }   
-    }  
-}
-
-
-#thumbs{
-    display: flex;
-    align-items: start;
-    justify-content: center;
-    width: 100vw;
-    img{
-        width: 216px;
-        margin-bottom: -4px;
-    }
-} 
-
-
-#clients{
-    width: 100vw;
-    min-height: 45rem;
-    background-color: #ffffff;
-    h1{
-        padding:60px 80px;
-        font-size: 60px;
-    }
-    .clients__box{
-        display: flex;
-        align-items: center;
-        justify-content: center; 
-        padding: 10px 80px;  
-    }
-    .clients__brand{
-        img{
-            width: 100%;
-            padding: 20px 30px; 
-        }
-    }
-}  
-
-footer{
-    background-color: #131313;
-    background: url(../img/footer/footerbg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100vw;
-    min-height: 60rem;
-    
-    h1{
-        padding: 222px 80px;
-        color: #ffffff;
-        font-size: 60px;
-    }
-    #footer__contact{
-        
-        padding: 100px 80px; 
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        max-width: 400px;  
-        a{
-            margin-right: 7rem;
-        }
+        @media (min-width:1800px) {
+            min-height: 80rem;
+        }    
         
         P{
+            width: 500px;
+            color: #16a2c5;
+            padding: 300px 0px 10px 80px;
+            text-transform: uppercase; 
+            line-height: 1.6;
+            
+            @media (min-width:1800px) {
+                padding: 600px 0px 10px 380px;
+                width: 800px;
+            }  
+        }  
+        h1{
+            padding: 0px 80px;
+            color: #ffffff;           
+            @media (min-width:1800px) {
+                padding:  0px 380px;
+            }  
+        }    
+    }
+    
+    
+    
+    .wedeliver{
+        background-color: #1db2d7;
+        min-height: 45rem;
+        // width: 100vw;
+        z-index: -1;
+        position: relative;
+        
+        .bar--wedeliver{
+            padding: 80px 0px 0px 80px;
+        }
+        h1{
+            padding: 0px 80px 100px 80px;
             color: #ffffff;
+            @media (min-width:1800px) {
+                padding:  100px 380px;
+            }  
+        }
+        .wedeliver--products{
+            display: flex;
+            align-items: center;
+            justify-content: center;              
         }
         
-        .footer__p{
-            color: #25fcff;
+        .wedeliver--img{
+            max-width: 100%;
+            padding: 20px 10px 30px 10px;
+            @media (min-width:1800px) {
+                padding: 60px 90px 150px 90px;
+            }  
+        }        
+    }
+
+
+    .jobs{
+        width: 100vw;
+        min-height: 3rem;
+        background-size: cover;
+        background-color: #7b7b7b;
+        z-index: -1;
+        position: relative;
+        
+        .bar--job{
+            padding: 50px 0px 0px 80px;
+        }
+        h1{
+            padding: 0px 80px 100px 80px;
+            color: #ffffff;
+            margin-bottom: 40px;
+            @media (min-width:1800px) {
+                padding:  60px 380px;
+            }  
+        }
+        .jobs--carousel{
+            display: flex;
+            align-items: center;
+            justify-content: space-between; 
+            width: 500px;
+            @media (min-width:1800px) {
+                width: 950px;                    
+            } 
+        }
+        .jobs--bullets{
+            display: flex;
+            margin-top: 40px;
+            margin-right: 25px;
+            a{
+                padding: 0px 5px;
+                // margin-left: 2px;
+                @media (min-width:1800px) {
+                    margin-top: 100px;              
+                } 
+            }            
+        }
+        .jobs--p{
+            color:#ffffff;
+            width: 350px;
             
+            p{
+                padding: 5px 80px;
+                font-size: 13px;
+                @media (min-width:1800px) {
+                    padding: 5px 380px;                                   
+                } 
+                
+            }
+            .jobs--p-adjust{
+                color:#131313;
+                font-size: 12px;
+            }
+            
+            
+        }
+        .jobs--celprlx{
+            img{
+                width: 900px;
+                margin-top: -400px;
+                margin-left: 180px;
+                margin-bottom: -6px;
+                @media (min-width:1800px) {
+                    margin-left: 750px;
+                    width: 1300px;                   
+                } 
+            } 
+            .cel--base{
+                position: absolute;
+                z-index: 1;           
+            }
+            .cel--conteudo{
+                position: absolute;
+                z-index: 1;
+                width: 900px;
+
+                @media (min-width:1800px) {
+                    width: 1300px;                   
+                }   
+                
+            }   
+        }  
+    }
+    
+    
+    .thumbs {
+        padding: 0;
+        -ms-box-orient: horizontal;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-color: #d8e3e9;
+        
+        
+        .thumbs--col, .thumbs--col6{
+            display: flex;
+            flex-wrap: wrap;
+            img{
+                max-width: 180px;
+
+                @media (min-width:1800px) {
+                }  
+            }
+        }
+    }
+    
+    
+    
+    
+    .clients{
+        min-height: 45rem;
+        background-color: #ffffff;
+        .bar--client{
+            padding: 80px 0px 0px 80px;
+        }
+        h1{
+            padding: 0px 80px 100px 80px;
+            @media (min-width:1800px) {
+                padding:  100px 380px;
+            }  
+        }
+        .clients--box{
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            padding: 10px 80px;
+            @media (min-width:1800px) {
+                padding: 60px 80px;
+            }    
+        }
+        .clients--brand{
+            img{
+                width: 100%;
+                padding: 20px 30px; 
+            }
+        }
+    }  
+    
+    
+    footer{
+        background-color: #131313;
+        background: url(../img/footer/footerbg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100vw;
+        min-height: 50rem;
+        
+        .bar--footer{
+            padding: 80px 0px 0px 80px;
+        }
+        
+        h1{
+            padding: 0px 80px 220px 80px;
+            color: #ffffff;
+            @media (min-width:1800px) {
+                padding:  100px 380px;
+            }  
+        }
+        .footer--contact{
+            
+            padding: 100px 80px; 
+            display: flex;
+            align-items: center;
+            width: 590px;
+            margin: 0px 10px;
+            a{
+                margin-right: 8rem;
+            }
+            
+            P{
+                color: #ffffff;
+                font-size: 11px;
+            }
+            
+            .footer--p{
+                color: #25fcff;
+            }
         }
         
     }
     
-}
+    
+    
