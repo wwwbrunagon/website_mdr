@@ -66,45 +66,44 @@ nav .brand {
   margin-left: 50px;
 }
 
-.header {
+header {
   background: url(../img/bgheader.jpg);
   background-size: cover;
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100vw;
   min-height: 50rem;
   background-repeat: no-repeat;
   background-position: 45%;
 }
 
 @media (min-width: 1800px) {
-  .header {
+  header {
     min-height: 80rem;
   }
 }
 
-.header P {
-  width: 500px;
+header P {
+  width: 452px;
+  font-size: 18px;
   color: #16a2c5;
-  padding: 300px 0px 10px 80px;
+  padding: 300px 0px 10px 85px;
   text-transform: uppercase;
-  line-height: 1.6;
+  line-height: 1.4;
 }
 
 @media (min-width: 1800px) {
-  .header P {
+  header P {
     padding: 600px 0px 10px 380px;
     width: 800px;
   }
 }
 
-.header h1 {
-  padding: 0px 80px;
+header h1 {
+  letter-spacing: -3px;
+  padding: 0px 85px;
   color: #ffffff;
 }
 
 @media (min-width: 1800px) {
-  .header h1 {
+  header h1 {
     padding: 0px 380px;
   }
 }
@@ -117,11 +116,11 @@ nav .brand {
 }
 
 .wedeliver .bar--wedeliver {
-  padding: 80px 0px 0px 80px;
+  padding: 140px 0px 0px 85px;
 }
 
 .wedeliver h1 {
-  padding: 0px 80px 100px 80px;
+  padding: 5px 0px 130px 85px;
   color: #ffffff;
 }
 
@@ -138,14 +137,14 @@ nav .brand {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .wedeliver .wedeliver--img {
-  max-width: 100%;
-  padding: 20px 10px 30px 10px;
+  min-height: 400px;
+  margin-bottom: 180px;
 }
 
 @media (min-width: 1800px) {
@@ -155,22 +154,21 @@ nav .brand {
 }
 
 .jobs {
-  width: 100vw;
-  min-height: 3rem;
   background-size: cover;
   background-color: #7b7b7b;
+  max-height: 540px;
   z-index: -1;
   position: relative;
 }
 
 .jobs .bar--job {
-  padding: 50px 0px 0px 80px;
+  padding: 160px 0px 0px 80px;
 }
 
 .jobs h1 {
-  padding: 0px 80px 100px 80px;
+  margin-bottom: 120px;
+  padding: 5px 80px 0px 85px;
   color: #ffffff;
-  margin-bottom: 40px;
 }
 
 @media (min-width: 1800px) {
@@ -179,46 +177,25 @@ nav .brand {
   }
 }
 
-.jobs .jobs--carousel {
+.jobs .jobs--bullets {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 500px;
-}
-
-@media (min-width: 1800px) {
-  .jobs .jobs--carousel {
-    width: 950px;
-  }
-}
-
-.jobs .jobs--bullets {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  margin-left: 210px;
   margin-top: 40px;
-  margin-right: 25px;
+  z-index: 1;
+  position: absolute;
 }
 
 .jobs .jobs--bullets a {
-  padding: 0px 5px;
-}
-
-@media (min-width: 1800px) {
-  .jobs .jobs--bullets a {
-    margin-top: 100px;
-  }
+  padding: 0px 15px;
 }
 
 .jobs .jobs--p {
   color: #ffffff;
-  width: 350px;
 }
 
 .jobs .jobs--p p {
@@ -234,14 +211,13 @@ nav .brand {
 
 .jobs .jobs--p .jobs--p-adjust {
   color: #131313;
-  font-size: 12px;
+  font-size: 10px;
 }
 
 .jobs .jobs--celprlx img {
-  width: 900px;
-  margin-top: -400px;
-  margin-left: 180px;
-  margin-bottom: -6px;
+  max-height: 640px;
+  margin-left: 130px;
+  margin-top: -530px;
 }
 
 @media (min-width: 1800px) {
@@ -259,7 +235,7 @@ nav .brand {
 .jobs .jobs--celprlx .cel--conteudo {
   position: absolute;
   z-index: 1;
-  width: 900px;
+  max-height: 640px;
 }
 
 @media (min-width: 1800px) {
@@ -281,16 +257,8 @@ nav .brand {
   background-color: #d8e3e9;
 }
 
-.thumbs .thumbs--col, .thumbs .thumbs--col6 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.thumbs .thumbs--col img, .thumbs .thumbs--col6 img {
-  max-width: 180px;
+.thumbs img {
+  width: 288px;
 }
 
 .clients {
@@ -299,7 +267,7 @@ nav .brand {
 }
 
 .clients .bar--client {
-  padding: 80px 0px 0px 80px;
+  padding: 140px 0px 0px 80px;
 }
 
 .clients h1 {
@@ -312,7 +280,7 @@ nav .brand {
   }
 }
 
-.clients .clients--box {
+.clients .clients--col {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -323,10 +291,11 @@ nav .brand {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 10px 80px;
+  margin-bottom: 174px;
 }
 
 @media (min-width: 1800px) {
-  .clients .clients--box {
+  .clients .clients--col {
     padding: 60px 80px;
   }
 }
@@ -343,10 +312,16 @@ footer {
   background-repeat: no-repeat;
   width: 100vw;
   min-height: 50rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 footer .bar--footer {
-  padding: 80px 0px 0px 80px;
+  padding: 145px 0px 0px 80px;
 }
 
 footer h1 {
@@ -383,5 +358,14 @@ footer .footer--contact P {
 
 footer .footer--contact .footer--p {
   color: #25fcff;
+}
+
+footer .footer--gallery--01, footer .footer--gallery-right, footer .footer--gallery-base--r1, footer .footer--gallery-base--r2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=style.css.map */

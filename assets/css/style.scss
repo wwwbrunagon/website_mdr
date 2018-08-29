@@ -1,10 +1,11 @@
+//main resolution: 1444px
 * {
     margin: 0;   
     font-family: 'Montserrat', sans-serif;  
     box-sizing: border-box; 
 }
 h1{
-    font-size: 50px;
+    font-size: 50px; //font original = 60px
     font-weight: 900;
 }
 
@@ -21,7 +22,6 @@ nav {
     }
 }
 
-
 //Menu Toggle
 .menu--toggle {
     height: 100%;
@@ -37,7 +37,7 @@ nav {
 }
 
 .menu--toggle a {
-    padding: 8px 8px 8px 32px;
+    padding: 8px 8px 8px 32px;  
     text-decoration: none;
     font-size: 35px;
     font-weight: bold;
@@ -58,19 +58,16 @@ nav {
     margin-left: 50px;
 }
 
-// @media screen and (max-height: 450px) {
+// SUGESTAO => @media screen and (max-height: 450px){
     //   .menu--toggle {padding-top: 15px;}
     //   .menu--toggle a {font-size: 18px;}
     // }
-    
     //end Menu Toggle
     
     
-    .header{
+    header{
         background: url(../img/bgheader.jpg);
         background-size: cover;
-        object-fit: cover;
-        width: 100vw;
         min-height: 50rem;
         background-repeat: no-repeat;
         background-position: 45%;
@@ -80,19 +77,21 @@ nav {
         }    
         
         P{
-            width: 500px;
+            width: 452px;
+            font-size: 18px; //font original=25px
             color: #16a2c5;
-            padding: 300px 0px 10px 80px;
+            padding: 300px 0px 10px 85px;
             text-transform: uppercase; 
-            line-height: 1.6;
-            
+            line-height: 1.4;
             @media (min-width:1800px) {
                 padding: 600px 0px 10px 380px;
                 width: 800px;
             }  
         }  
         h1{
-            padding: 0px 80px;
+            //H1 aqui com a font-size da tipografia original = 75px;
+            letter-spacing: -3px;//usando a font original nao precisa disso 
+            padding: 0px 85px;
             color: #ffffff;           
             @media (min-width:1800px) {
                 padding:  0px 380px;
@@ -101,19 +100,18 @@ nav {
     }
     
     
-    
+    //SECTION ENTREGAMOS 
     .wedeliver{
         background-color: #1db2d7;
         min-height: 45rem;
-        // width: 100vw;
         z-index: -1;
         position: relative;
         
         .bar--wedeliver{
-            padding: 80px 0px 0px 80px;
+            padding: 140px 0px 0px 85px;
         }
         h1{
-            padding: 0px 80px 100px 80px;
+            padding: 5px 0px 130px 85px;
             color: #ffffff;
             @media (min-width:1800px) {
                 padding:  100px 380px;
@@ -122,84 +120,73 @@ nav {
         .wedeliver--products{
             display: flex;
             align-items: center;
-            justify-content: center;              
+            justify-content: space-between;              
         }
-        
         .wedeliver--img{
-            max-width: 100%;
-            padding: 20px 10px 30px 10px;
+            min-height: 400px;
+            margin-bottom: 180px;
             @media (min-width:1800px) {
                 padding: 60px 90px 150px 90px;
             }  
         }        
     }
-
-
+    //end--ENTREGAMOS 
+    
+    
+    //SECTION JOBS
     .jobs{
-        width: 100vw;
-        min-height: 3rem;
         background-size: cover;
         background-color: #7b7b7b;
+        max-height: 540px;// o height pelo psd=561px
         z-index: -1;
         position: relative;
         
         .bar--job{
-            padding: 50px 0px 0px 80px;
+            padding: 160px 0px 0px 80px;
         }
         h1{
-            padding: 0px 80px 100px 80px;
+            margin-bottom: 120px;
+            padding: 5px 80px 0px 85px;
             color: #ffffff;
-            margin-bottom: 40px;
             @media (min-width:1800px) {
                 padding:  60px 380px;
             }  
         }
-        .jobs--carousel{
-            display: flex;
-            align-items: center;
-            justify-content: space-between; 
-            width: 500px;
-            @media (min-width:1800px) {
-                width: 950px;                    
-            } 
-        }
         .jobs--bullets{
             display: flex;
-            margin-top: 40px;
-            margin-right: 25px;
+            align-items: center;
+            margin-left: 210px; // o left pelo psd= 265px
+            margin-top: 40px; // o top pelo psd= 490px
+            z-index: 1;
+            position: absolute;    
             a{
-                padding: 0px 5px;
-                // margin-left: 2px;
+                padding: 0px 15px; 
                 @media (min-width:1800px) {
-                    margin-top: 100px;              
+                    // margin-top: 100px;              
                 } 
             }            
         }
         .jobs--p{
             color:#ffffff;
-            width: 350px;
-            
-            p{
+            //o width do psd=184px            
+            p{          
                 padding: 5px 80px;
-                font-size: 13px;
+                font-size: 13px; //font orginal=14px
                 @media (min-width:1800px) {
                     padding: 5px 380px;                                   
-                } 
-                
+                }                 
             }
             .jobs--p-adjust{
                 color:#131313;
-                font-size: 12px;
-            }
-            
-            
+                font-size: 10px;//font orginal=11px
+            }  
         }
+        
         .jobs--celprlx{
             img{
-                width: 900px;
-                margin-top: -400px;
-                margin-left: 180px;
-                margin-bottom: -6px;
+                max-height: 640px;
+                margin-left: 130px;
+                margin-top: -530px; //??? adjust this gamb?
                 @media (min-width:1800px) {
                     margin-left: 750px;
                     width: 1300px;                   
@@ -212,16 +199,13 @@ nav {
             .cel--conteudo{
                 position: absolute;
                 z-index: 1;
-                width: 900px;
-
+                max-height: 640px;               
                 @media (min-width:1800px) {
                     width: 1300px;                   
                 }   
-                
             }   
         }  
     }
-    
     
     .thumbs {
         padding: 0;
@@ -230,40 +214,32 @@ nav {
         flex-wrap: wrap;
         justify-content: space-around;
         background-color: #d8e3e9;
-        
-        
-        .thumbs--col, .thumbs--col6{
-            display: flex;
-            flex-wrap: wrap;
-            img{
-                max-width: 180px;
-
-                @media (min-width:1800px) {
-                }  
-            }
+        img{
+            width: 288px;
         }
     }
+    //end--JOBS 
     
     
-    
-    
+    //SECTION CLIENTES
     .clients{
         min-height: 45rem;
         background-color: #ffffff;
         .bar--client{
-            padding: 80px 0px 0px 80px;
+            padding: 140px 0px 0px 80px;
         }
         h1{
-            padding: 0px 80px 100px 80px;
+            padding: 0px 80px 100px 80px;            
             @media (min-width:1800px) {
                 padding:  100px 380px;
             }  
         }
-        .clients--box{
+        .clients--col{
             display: flex;
             align-items: center;
             justify-content: center; 
             padding: 10px 80px;
+            margin-bottom: 174px;
             @media (min-width:1800px) {
                 padding: 60px 80px;
             }    
@@ -275,6 +251,7 @@ nav {
             }
         }
     }  
+    //end--CLIENTES   
     
     
     footer{
@@ -284,11 +261,12 @@ nav {
         background-repeat: no-repeat;
         width: 100vw;
         min-height: 50rem;
-        
+        display: flex;
+        align-items: center;    
+                
         .bar--footer{
-            padding: 80px 0px 0px 80px;
-        }
-        
+            padding: 145px 0px 0px 80px;
+        }        
         h1{
             padding: 0px 80px 220px 80px;
             color: #ffffff;
@@ -296,8 +274,7 @@ nav {
                 padding:  100px 380px;
             }  
         }
-        .footer--contact{
-            
+        .footer--contact{            
             padding: 100px 80px; 
             display: flex;
             align-items: center;
@@ -305,18 +282,20 @@ nav {
             margin: 0px 10px;
             a{
                 margin-right: 8rem;
-            }
-            
+            }            
             P{
                 color: #ffffff;
                 font-size: 11px;
-            }
-            
+            }            
             .footer--p{
                 color: #25fcff;
             }
         }
-        
+
+        .footer--gallery--01, .footer--gallery-right, .footer--gallery-base--r1, .footer--gallery-base--r2{
+            display: flex;
+            align-items: center;                 
+        }
     }
     
     
