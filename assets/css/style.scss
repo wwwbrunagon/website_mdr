@@ -1,4 +1,5 @@
 //main resolution: 1444px
+
 * {
     margin: 0;   
     font-family: 'Montserrat', sans-serif;  
@@ -71,10 +72,9 @@ nav {
         min-height: 50rem;
         background-repeat: no-repeat;
         background-position: 45%;
-        
-        @media (min-width:1800px) {
-            min-height: 80rem;
-        }    
+        @media (max-width: 1080px) {
+            min-height: 40rem;
+        }
         
         P{
             width: 452px;
@@ -82,20 +82,12 @@ nav {
             color: #16a2c5;
             padding: 300px 0px 10px 85px;
             text-transform: uppercase; 
-            line-height: 1.4;
-            @media (min-width:1800px) {
-                padding: 600px 0px 10px 380px;
-                width: 800px;
-            }  
         }  
         h1{
             //H1 aqui com a font-size da tipografia original = 75px;
             letter-spacing: -3px;//usando a font original nao precisa disso 
             padding: 0px 85px;
             color: #ffffff;           
-            @media (min-width:1800px) {
-                padding:  0px 380px;
-            }  
         }    
     }
     
@@ -103,32 +95,31 @@ nav {
     //SECTION ENTREGAMOS 
     .wedeliver{
         background-color: #1db2d7;
-        min-height: 45rem;
+        min-height: 950px;
         z-index: -1;
         position: relative;
+        padding-bottom: 185px;
         
         .bar--wedeliver{
-            padding: 140px 0px 0px 85px;
+            padding: 155px 0px 0px 85px;
         }
         h1{
             padding: 5px 0px 130px 85px;
             color: #ffffff;
-            @media (min-width:1800px) {
-                padding:  100px 380px;
-            }  
+            
         }
         .wedeliver--products{
             display: flex;
             align-items: center;
-            justify-content: space-between;              
+            justify-content: space-between; 
+            max-width: 1320px;
+            padding-left: 85px;
+            img{
+                @media (min-width: 1080px) {
+                    width: 90%;
+                }
+            }
         }
-        .wedeliver--img{
-            min-height: 400px;
-            margin-bottom: 180px;
-            @media (min-width:1800px) {
-                padding: 60px 90px 150px 90px;
-            }  
-        }        
     }
     //end--ENTREGAMOS 
     
@@ -137,75 +128,82 @@ nav {
     .jobs{
         background-size: cover;
         background-color: #7b7b7b;
-        max-height: 540px;// o height pelo psd=561px
+        max-height: 521px;// o height pelo psd=561px
         z-index: -1;
         position: relative;
         
         .bar--job{
-            padding: 160px 0px 0px 80px;
+            padding: 170px 0px 0px 80px;
+            @media (max-width: 1080px) {
+                padding: 90px 0px 0px 80px;;
+            }
         }
         h1{
             margin-bottom: 120px;
             padding: 5px 80px 0px 85px;
             color: #ffffff;
-            @media (min-width:1800px) {
-                padding:  60px 380px;
-            }  
+            
         }
         .jobs--bullets{
             display: flex;
             align-items: center;
             margin-left: 210px; // o left pelo psd= 265px
-            margin-top: 40px; // o top pelo psd= 490px
+            margin-top: 30px; // o top pelo psd= 490px
             z-index: 1;
-            position: absolute;    
-            a{
-                padding: 0px 15px; 
-                @media (min-width:1800px) {
-                    // margin-top: 100px;              
-                } 
-            }            
-        }
-        .jobs--p{
-            color:#ffffff;
-            //o width do psd=184px            
-            p{          
-                padding: 5px 80px;
-                font-size: 13px; //font orginal=14px
-                @media (min-width:1800px) {
-                    padding: 5px 380px;                                   
-                }                 
-            }
-            .jobs--p-adjust{
-                color:#131313;
-                font-size: 10px;//font orginal=11px
+            position: absolute;
+            @media (max-width: 1080px) {
+                margin-left: 180px; 
+                margin-top: 10px; 
             }  
-        }
-        
-        .jobs--celprlx{
-            img{
-                max-height: 640px;
-                margin-left: 130px;
-                margin-top: -530px; //??? adjust this gamb?
-                @media (min-width:1800px) {
-                    margin-left: 750px;
-                    width: 1300px;                   
-                } 
+            
+            a{
+                padding: 0px 15px;
+                @media (max-width: 1080px) {
+                    padding: 0px 10px;
+                }  
             } 
-            .cel--base{
-                position: absolute;
-                z-index: 1;           
-            }
-            .cel--conteudo{
-                position: absolute;
-                z-index: 1;
-                max-height: 640px;               
-                @media (min-width:1800px) {
-                    width: 1300px;                   
-                }   
-            }   
+        }            
+    }
+    .jobs--p{
+        color:#ffffff;
+        //o width do psd=184px            
+        p{          
+            padding: 5px 80px;
+            font-size: 13px; //font orginal=14px            
+        }
+        .jobs--p-adjust{
+            color:#131313;
+            font-size: 10px;//font orginal=11px
         }  
     }
+    
+    .jobs--celprlx{
+        img{
+            max-height: 630px;
+            margin-left: 10px;
+            margin-top: -545px;//??? adjust this
+            @media (max-width: 1080px) {
+                max-height: 500px;
+                margin-left: 12px;
+                margin-top: -450px;
+            }   
+        } 
+        .cel--base{
+            position: absolute;
+            z-index: 1;            
+        }
+        .cel--conteudo{
+            position: absolute;
+            z-index: 1;
+            max-height: 630px;
+            @media (max-width: 1080px) {
+                max-height: 500px;
+                margin-left: 12px;
+                margin-top: -450px;
+            }  
+        }   
+    }  
+    
     
     .thumbs {
         padding: 0;
@@ -215,7 +213,10 @@ nav {
         justify-content: space-around;
         background-color: #d8e3e9;
         img{
-            width: 288px;
+            width: 240px;
+            @media (max-width: 1080px) {
+                width: 180px;
+            }
         }
     }
     //end--JOBS 
@@ -230,9 +231,6 @@ nav {
         }
         h1{
             padding: 0px 80px 100px 80px;            
-            @media (min-width:1800px) {
-                padding:  100px 380px;
-            }  
         }
         .clients--col{
             display: flex;
@@ -240,9 +238,7 @@ nav {
             justify-content: center; 
             padding: 10px 80px;
             margin-bottom: 174px;
-            @media (min-width:1800px) {
-                padding: 60px 80px;
-            }    
+            
         }
         .clients--brand{
             img{
@@ -259,29 +255,35 @@ nav {
         background: url(../img/footer/footerbg.jpg);
         background-size: cover;
         background-repeat: no-repeat;
-        width: 100vw;
         min-height: 50rem;
         display: flex;
         align-items: center;    
-                
+        
         .bar--footer{
             padding: 145px 0px 0px 80px;
+            @media (max-width: 1080px) {
+                padding: 0px 0px 0px 80px;
+            }
         }        
         h1{
             padding: 0px 80px 220px 80px;
             color: #ffffff;
-            @media (min-width:1800px) {
-                padding:  100px 380px;
-            }  
         }
-        .footer--contact{            
-            padding: 100px 80px; 
+        .footer--contact{
+            width: 575px;             
+        }
+        .footer--data{            
+            padding: 60px 80px; 
             display: flex;
-            align-items: center;
-            width: 590px;
+            align-items: flex-end;
+            width: 575px;
             margin: 0px 10px;
+            @media (max-width: 1080px) {
+                padding: 10px 80px; 
+            }
+            
             a{
-                margin-right: 8rem;
+                margin-right: 2rem;
             }            
             P{
                 color: #ffffff;
@@ -291,10 +293,22 @@ nav {
                 color: #25fcff;
             }
         }
-
+        .footer--gallery{
+            padding: 81px 50px 0px 250px; 
+            @media (max-width: 1080px) {
+                padding: 0px 50px 0px 0px; 
+            }          
+        }
         .footer--gallery--01, .footer--gallery-right, .footer--gallery-base--r1, .footer--gallery-base--r2{
             display: flex;
-            align-items: center;                 
+            align-items: center; 
+            img{
+                margin: 3px 3px;
+                @media (max-width: 1080px) {
+                    margin: 2px 2px;
+                    width: 95%;
+                } 
+            }                
         }
     }
     

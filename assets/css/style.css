@@ -74,9 +74,9 @@ header {
   background-position: 45%;
 }
 
-@media (min-width: 1800px) {
+@media (max-width: 1080px) {
   header {
-    min-height: 80rem;
+    min-height: 40rem;
   }
 }
 
@@ -86,14 +86,6 @@ header P {
   color: #16a2c5;
   padding: 300px 0px 10px 85px;
   text-transform: uppercase;
-  line-height: 1.4;
-}
-
-@media (min-width: 1800px) {
-  header P {
-    padding: 600px 0px 10px 380px;
-    width: 800px;
-  }
 }
 
 header h1 {
@@ -102,32 +94,21 @@ header h1 {
   color: #ffffff;
 }
 
-@media (min-width: 1800px) {
-  header h1 {
-    padding: 0px 380px;
-  }
-}
-
 .wedeliver {
   background-color: #1db2d7;
-  min-height: 45rem;
+  min-height: 950px;
   z-index: -1;
   position: relative;
+  padding-bottom: 185px;
 }
 
 .wedeliver .bar--wedeliver {
-  padding: 140px 0px 0px 85px;
+  padding: 155px 0px 0px 85px;
 }
 
 .wedeliver h1 {
   padding: 5px 0px 130px 85px;
   color: #ffffff;
-}
-
-@media (min-width: 1800px) {
-  .wedeliver h1 {
-    padding: 100px 380px;
-  }
 }
 
 .wedeliver .wedeliver--products {
@@ -140,41 +121,38 @@ header h1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  max-width: 1320px;
+  padding-left: 85px;
 }
 
-.wedeliver .wedeliver--img {
-  min-height: 400px;
-  margin-bottom: 180px;
-}
-
-@media (min-width: 1800px) {
-  .wedeliver .wedeliver--img {
-    padding: 60px 90px 150px 90px;
+@media (min-width: 1080px) {
+  .wedeliver .wedeliver--products img {
+    width: 90%;
   }
 }
 
 .jobs {
   background-size: cover;
   background-color: #7b7b7b;
-  max-height: 540px;
+  max-height: 521px;
   z-index: -1;
   position: relative;
 }
 
 .jobs .bar--job {
-  padding: 160px 0px 0px 80px;
+  padding: 170px 0px 0px 80px;
+}
+
+@media (max-width: 1080px) {
+  .jobs .bar--job {
+    padding: 90px 0px 0px 80px;
+  }
 }
 
 .jobs h1 {
   margin-bottom: 120px;
   padding: 5px 80px 0px 85px;
   color: #ffffff;
-}
-
-@media (min-width: 1800px) {
-  .jobs h1 {
-    padding: 60px 380px;
-  }
 }
 
 .jobs .jobs--bullets {
@@ -185,62 +163,72 @@ header h1 {
       -ms-flex-align: center;
           align-items: center;
   margin-left: 210px;
-  margin-top: 40px;
+  margin-top: 30px;
   z-index: 1;
   position: absolute;
+}
+
+@media (max-width: 1080px) {
+  .jobs .jobs--bullets {
+    margin-left: 180px;
+    margin-top: 10px;
+  }
 }
 
 .jobs .jobs--bullets a {
   padding: 0px 15px;
 }
 
-.jobs .jobs--p {
+@media (max-width: 1080px) {
+  .jobs .jobs--bullets a {
+    padding: 0px 10px;
+  }
+}
+
+.jobs--p {
   color: #ffffff;
 }
 
-.jobs .jobs--p p {
+.jobs--p p {
   padding: 5px 80px;
   font-size: 13px;
 }
 
-@media (min-width: 1800px) {
-  .jobs .jobs--p p {
-    padding: 5px 380px;
-  }
-}
-
-.jobs .jobs--p .jobs--p-adjust {
+.jobs--p .jobs--p-adjust {
   color: #131313;
   font-size: 10px;
 }
 
-.jobs .jobs--celprlx img {
-  max-height: 640px;
-  margin-left: 130px;
-  margin-top: -530px;
+.jobs--celprlx img {
+  max-height: 630px;
+  margin-left: 10px;
+  margin-top: -545px;
 }
 
-@media (min-width: 1800px) {
-  .jobs .jobs--celprlx img {
-    margin-left: 750px;
-    width: 1300px;
+@media (max-width: 1080px) {
+  .jobs--celprlx img {
+    max-height: 500px;
+    margin-left: 12px;
+    margin-top: -450px;
   }
 }
 
-.jobs .jobs--celprlx .cel--base {
+.jobs--celprlx .cel--base {
   position: absolute;
   z-index: 1;
 }
 
-.jobs .jobs--celprlx .cel--conteudo {
+.jobs--celprlx .cel--conteudo {
   position: absolute;
   z-index: 1;
-  max-height: 640px;
+  max-height: 630px;
 }
 
-@media (min-width: 1800px) {
-  .jobs .jobs--celprlx .cel--conteudo {
-    width: 1300px;
+@media (max-width: 1080px) {
+  .jobs--celprlx .cel--conteudo {
+    max-height: 500px;
+    margin-left: 12px;
+    margin-top: -450px;
   }
 }
 
@@ -258,7 +246,13 @@ header h1 {
 }
 
 .thumbs img {
-  width: 288px;
+  width: 240px;
+}
+
+@media (max-width: 1080px) {
+  .thumbs img {
+    width: 180px;
+  }
 }
 
 .clients {
@@ -272,12 +266,6 @@ header h1 {
 
 .clients h1 {
   padding: 0px 80px 100px 80px;
-}
-
-@media (min-width: 1800px) {
-  .clients h1 {
-    padding: 100px 380px;
-  }
 }
 
 .clients .clients--col {
@@ -294,12 +282,6 @@ header h1 {
   margin-bottom: 174px;
 }
 
-@media (min-width: 1800px) {
-  .clients .clients--col {
-    padding: 60px 80px;
-  }
-}
-
 .clients .clients--brand img {
   width: 100%;
   padding: 20px 30px;
@@ -310,7 +292,6 @@ footer {
   background: url(../img/footer/footerbg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100vw;
   min-height: 50rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -324,40 +305,60 @@ footer .bar--footer {
   padding: 145px 0px 0px 80px;
 }
 
+@media (max-width: 1080px) {
+  footer .bar--footer {
+    padding: 0px 0px 0px 80px;
+  }
+}
+
 footer h1 {
   padding: 0px 80px 220px 80px;
   color: #ffffff;
 }
 
-@media (min-width: 1800px) {
-  footer h1 {
-    padding: 100px 380px;
-  }
+footer .footer--contact {
+  width: 575px;
 }
 
-footer .footer--contact {
-  padding: 100px 80px;
+footer .footer--data {
+  padding: 60px 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 590px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 575px;
   margin: 0px 10px;
 }
 
-footer .footer--contact a {
-  margin-right: 8rem;
+@media (max-width: 1080px) {
+  footer .footer--data {
+    padding: 10px 80px;
+  }
 }
 
-footer .footer--contact P {
+footer .footer--data a {
+  margin-right: 2rem;
+}
+
+footer .footer--data P {
   color: #ffffff;
   font-size: 11px;
 }
 
-footer .footer--contact .footer--p {
+footer .footer--data .footer--p {
   color: #25fcff;
+}
+
+footer .footer--gallery {
+  padding: 81px 50px 0px 250px;
+}
+
+@media (max-width: 1080px) {
+  footer .footer--gallery {
+    padding: 0px 50px 0px 0px;
+  }
 }
 
 footer .footer--gallery--01, footer .footer--gallery-right, footer .footer--gallery-base--r1, footer .footer--gallery-base--r2 {
@@ -367,5 +368,16 @@ footer .footer--gallery--01, footer .footer--gallery-right, footer .footer--gall
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+footer .footer--gallery--01 img, footer .footer--gallery-right img, footer .footer--gallery-base--r1 img, footer .footer--gallery-base--r2 img {
+  margin: 3px 3px;
+}
+
+@media (max-width: 1080px) {
+  footer .footer--gallery--01 img, footer .footer--gallery-right img, footer .footer--gallery-base--r1 img, footer .footer--gallery-base--r2 img {
+    margin: 2px 2px;
+    width: 95%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
