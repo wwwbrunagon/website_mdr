@@ -74,9 +74,15 @@ header {
   background-position: 45%;
 }
 
-@media (max-width: 1080px) {
+@media screen and (max-width: 1224px) {
   header {
     min-height: 40rem;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  header {
+    min-height: 35rem;
   }
 }
 
@@ -102,6 +108,18 @@ header h1 {
   padding-bottom: 185px;
 }
 
+@media screen and (min-width: 1224px) {
+  .wedeliver {
+    height: 750px;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .wedeliver {
+    height: 550px;
+  }
+}
+
 .wedeliver .bar--wedeliver {
   padding: 155px 0px 0px 85px;
 }
@@ -125,9 +143,15 @@ header h1 {
   padding-left: 85px;
 }
 
-@media (min-width: 1080px) {
+@media screen and (min-width: 1224px) {
   .wedeliver .wedeliver--products img {
-    width: 90%;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .wedeliver .wedeliver--products img {
+    width: 100%;
   }
 }
 
@@ -139,11 +163,23 @@ header h1 {
   position: relative;
 }
 
+@media screen and (max-width: 1224px) {
+  .jobs {
+    max-height: 421px;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .jobs {
+    max-height: 400px;
+  }
+}
+
 .jobs .bar--job {
   padding: 170px 0px 0px 80px;
 }
 
-@media (max-width: 1080px) {
+@media screen and (max-width: 1224px) {
   .jobs .bar--job {
     padding: 90px 0px 0px 80px;
   }
@@ -168,10 +204,10 @@ header h1 {
   position: absolute;
 }
 
-@media (max-width: 1080px) {
+@media screen and (max-width: 1224px) {
   .jobs .jobs--bullets {
-    margin-left: 180px;
-    margin-top: 10px;
+    margin-left: 190px;
+    margin-top: -30px;
   }
 }
 
@@ -179,14 +215,26 @@ header h1 {
   padding: 0px 15px;
 }
 
-@media (max-width: 1080px) {
+@media screen and (max-width: 1224px) {
   .jobs .jobs--bullets a {
-    padding: 0px 10px;
+    padding: 0px 7px;
   }
 }
 
 .jobs--p {
   color: #ffffff;
+}
+
+@media screen and (max-width: 1224px) {
+  .jobs--p {
+    margin: 50px 0px;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .jobs--p {
+    margin: 0px 0px;
+  }
 }
 
 .jobs--p p {
@@ -205,11 +253,17 @@ header h1 {
   margin-top: -545px;
 }
 
-@media (max-width: 1080px) {
+@media screen and (max-width: 1224px) {
   .jobs--celprlx img {
     max-height: 500px;
-    margin-left: 12px;
-    margin-top: -450px;
+    margin-top: -490px;
+    margin-left: 13px;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .jobs--celprlx img {
+    max-height: 450px;
   }
 }
 
@@ -224,11 +278,19 @@ header h1 {
   max-height: 630px;
 }
 
-@media (max-width: 1080px) {
+@media screen and (max-width: 1224px) {
   .jobs--celprlx .cel--conteudo {
     max-height: 500px;
-    margin-left: 12px;
-    margin-top: -450px;
+    margin-top: -490px;
+    margin-left: 13px;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .jobs--celprlx .cel--conteudo {
+    max-height: 450px;
+    margin-top: -440px;
+    margin-left: 13px;
   }
 }
 
@@ -249,7 +311,7 @@ header h1 {
   width: 240px;
 }
 
-@media (max-width: 1080px) {
+@media screen and (max-width: 1224px) {
   .thumbs img {
     width: 180px;
   }
@@ -305,7 +367,7 @@ footer .bar--footer {
   padding: 145px 0px 0px 80px;
 }
 
-@media (max-width: 1080px) {
+@media screen and (max-width: 1224px) {
   footer .bar--footer {
     padding: 0px 0px 0px 80px;
   }
@@ -332,7 +394,7 @@ footer .footer--data {
   margin: 0px 10px;
 }
 
-@media (max-width: 1080px) {
+@media screen and (max-width: 1224px) {
   footer .footer--data {
     padding: 10px 80px;
   }
@@ -355,7 +417,7 @@ footer .footer--gallery {
   padding: 81px 50px 0px 250px;
 }
 
-@media (max-width: 1080px) {
+@media screen and (max-width: 1224px) {
   footer .footer--gallery {
     padding: 0px 50px 0px 0px;
   }
@@ -374,10 +436,9 @@ footer .footer--gallery--01 img, footer .footer--gallery-right img, footer .foot
   margin: 3px 3px;
 }
 
-@media (max-width: 1080px) {
+@media screen and (max-width: 1224px) {
   footer .footer--gallery--01 img, footer .footer--gallery-right img, footer .footer--gallery-base--r1 img, footer .footer--gallery-base--r2 img {
     margin: 2px 2px;
-    width: 95%;
   }
 }
 /*# sourceMappingURL=style.css.map */

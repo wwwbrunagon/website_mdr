@@ -59,7 +59,7 @@ nav {
     margin-left: 50px;
 }
 
-// SUGESTAO => @media screen and (max-height: 450px){
+// SUGESTAO =>@media screen and (max-height: 450px){
     //   .menu--toggle {padding-top: 15px;}
     //   .menu--toggle a {font-size: 18px;}
     // }
@@ -72,8 +72,12 @@ nav {
         min-height: 50rem;
         background-repeat: no-repeat;
         background-position: 45%;
-        @media (max-width: 1080px) {
+        @media screen and (max-width: 1224px) {
             min-height: 40rem;
+        }
+        
+        @media screen and (max-width: 920px) {
+            min-height: 35rem;
         }
         
         P{
@@ -99,6 +103,12 @@ nav {
         z-index: -1;
         position: relative;
         padding-bottom: 185px;
+        @media screen and (min-width: 1224px) {
+            height: 750px;
+        }
+        @media screen and (max-width: 920px) {
+            height: 550px;
+        }
         
         .bar--wedeliver{
             padding: 155px 0px 0px 85px;
@@ -115,8 +125,11 @@ nav {
             max-width: 1320px;
             padding-left: 85px;
             img{
-                @media (min-width: 1080px) {
-                    width: 90%;
+                @media screen and (min-width: 1224px) {
+                    width: 100%;
+                }
+                @media screen and (max-width: 920px) {
+                    width: 100%;
                 }
             }
         }
@@ -131,10 +144,16 @@ nav {
         max-height: 521px;// o height pelo psd=561px
         z-index: -1;
         position: relative;
+        @media screen and (max-width: 1224px) {
+            max-height: 421px;
+        }
+        @media screen and (max-width: 920px) {
+            max-height: 400px;
+        }
         
         .bar--job{
             padding: 170px 0px 0px 80px;
-            @media (max-width: 1080px) {
+            @media screen and (max-width: 1224px) {
                 padding: 90px 0px 0px 80px;;
             }
         }
@@ -151,25 +170,32 @@ nav {
             margin-top: 30px; // o top pelo psd= 490px
             z-index: 1;
             position: absolute;
-            @media (max-width: 1080px) {
-                margin-left: 180px; 
-                margin-top: 10px; 
+            @media screen and (max-width: 1224px) {
+                margin-left: 190px; 
+                margin-top: -30px; 
             }  
             
             a{
                 padding: 0px 15px;
-                @media (max-width: 1080px) {
-                    padding: 0px 10px;
+                @media screen and (max-width: 1224px) {
+                    padding: 0px 7px;
                 }  
             } 
         }            
     }
     .jobs--p{
         color:#ffffff;
-        //o width do psd=184px            
+        //o width do psd=184px  
+        @media screen and (max-width: 1224px) {
+            margin: 50px 0px;
+        }           
+        @media screen and (max-width: 920px) {
+            margin: 0px 0px;
+        }           
         p{          
             padding: 5px 80px;
-            font-size: 13px; //font orginal=14px            
+            font-size: 13px; //font orginal=14px 
+            
         }
         .jobs--p-adjust{
             color:#131313;
@@ -182,10 +208,13 @@ nav {
             max-height: 630px;
             margin-left: 10px;
             margin-top: -545px;//??? adjust this
-            @media (max-width: 1080px) {
+            @media screen and (max-width: 1224px) {
                 max-height: 500px;
-                margin-left: 12px;
-                margin-top: -450px;
+                margin-top: -490px;
+                margin-left: 13px;
+            }   
+            @media screen and (max-width: 920px) {
+                max-height: 450px;
             }   
         } 
         .cel--base{
@@ -196,13 +225,20 @@ nav {
             position: absolute;
             z-index: 1;
             max-height: 630px;
-            @media (max-width: 1080px) {
+            @media screen and (max-width: 1224px) {
                 max-height: 500px;
-                margin-left: 12px;
-                margin-top: -450px;
-            }  
+                margin-top: -490px;
+                margin-left: 13px;
+            } 
+            @media screen and (max-width: 920px) {
+                max-height: 450px;
+                margin-top: -440px;
+                margin-left: 13px;
+            } 
         }   
     }  
+    
+    
     
     
     .thumbs {
@@ -214,7 +250,7 @@ nav {
         background-color: #d8e3e9;
         img{
             width: 240px;
-            @media (max-width: 1080px) {
+            @media screen and (max-width: 1224px) {
                 width: 180px;
             }
         }
@@ -261,7 +297,7 @@ nav {
         
         .bar--footer{
             padding: 145px 0px 0px 80px;
-            @media (max-width: 1080px) {
+            @media screen and (max-width: 1224px) {
                 padding: 0px 0px 0px 80px;
             }
         }        
@@ -278,7 +314,7 @@ nav {
             align-items: flex-end;
             width: 575px;
             margin: 0px 10px;
-            @media (max-width: 1080px) {
+            @media screen and (max-width: 1224px) {
                 padding: 10px 80px; 
             }
             
@@ -295,7 +331,7 @@ nav {
         }
         .footer--gallery{
             padding: 81px 50px 0px 250px; 
-            @media (max-width: 1080px) {
+            @media screen and (max-width: 1224px) {
                 padding: 0px 50px 0px 0px; 
             }          
         }
@@ -304,9 +340,9 @@ nav {
             align-items: center; 
             img{
                 margin: 3px 3px;
-                @media (max-width: 1080px) {
+                @media screen and (max-width: 1224px) {
                     margin: 2px 2px;
-                    width: 95%;
+                    
                 } 
             }                
         }
