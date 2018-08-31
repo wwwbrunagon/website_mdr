@@ -158,6 +158,8 @@ header h1 {
 .jobs {
   background-size: cover;
   background-color: #7b7b7b;
+  background-image: url(../img/jobs_bg.png);
+  background-repeat: no no-repeat;
   max-height: 521px;
   z-index: -1;
   position: relative;
@@ -248,9 +250,7 @@ header h1 {
 }
 
 .jobs--celprlx img {
-  max-height: 630px;
   margin-left: 107px;
-  margin-top: -561px;
 }
 
 @media screen and (max-width: 1224px) {
@@ -270,6 +270,7 @@ header h1 {
 .jobs--celprlx .cel--base {
   position: absolute;
   z-index: 1;
+  margin-left: 107px;
 }
 
 .jobs--celprlx .cel--conteudo {

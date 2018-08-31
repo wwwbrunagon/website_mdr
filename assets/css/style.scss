@@ -144,6 +144,8 @@ nav {
     .jobs{
         background-size: cover;
         background-color: #7b7b7b;
+        background-image: url(../img/jobs_bg.png);
+        background-repeat: no no-repeat;
         max-height: 521px;// o height pelo psd=561px
         z-index: -1;
         position: relative;
@@ -208,9 +210,9 @@ nav {
     
     .jobs--celprlx{
         img{
-            max-height: 630px;
+            //max-height: 500px;
             margin-left: 107px;
-            margin-top: -561px;//??? adjust this
+
             @media screen and (max-width: 1224px) {
                 max-height: 500px;
                 margin-top: -490px;
@@ -222,7 +224,8 @@ nav {
         } 
         .cel--base{
             position: absolute;
-            z-index: 1;            
+            z-index: 1;  
+            margin-left: 107px;          
         }
         .cel--conteudo{
             position: absolute;
